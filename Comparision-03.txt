@@ -1,8 +1,6 @@
 
-
-                                                              TIME COMPLEXITIES:
-                                                            <-------------------->
-
+ TIME COMPLEXITIES:
+                                                    
 Aspect                                                            	Linked List	                                                           Dynamic Array
 Insertion at Head	                                                    O(1)	                                                                    O(n)
 Insertion at End                              	O(1) (with tail pointer) / O(n) (without tail pointer)	                O(1) amortized, O(n) worst-case (due to resizing)
@@ -23,9 +21,9 @@ Index Of	                                                            O(n)	      
 Split At Index	                                                      O(n)	                                                                      O(n)
 
 
-<--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-                                                              SPACE COMPLEXITIES
-                                                            <-------------------->
+--------------------------------------------------------------------------------------------------------
+                SPACE COMPLEXITIES :
+                                                    
 
 Method                                                         	Linked List                                                                 Dynamic Array 
 Insert at Head	                                             O(1) additional space                                                      	O(1) additional space
@@ -47,13 +45,13 @@ Index Of	                                                   O(1) additional spac
 Split At Index	                                             O(n) additional space (new list)	                                            O(n) additional space (new array)
 
                                                         
-<---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+-----------------------------------------------------------------------------------------------------------
 
-                                                                   Comparision:
-                                                                <--------------->
+    Comparision:
+                                                              
                                                                         
 Use a Linked List:                                                                       Use a Dynamic Array if:
-<----------------->                                                                      <----------------------->
+-----------------                                                                      ----------------------
 You need frequent insertions and deletions, especially at the ends.                      You need fast random access to elements.
 The collection size changes dynamically and frequently.                                  The collection size does not change drastically and frequently.
 You don't require fast random access to elements.                                        You prefer better cache performance and contiguous memory storage.
